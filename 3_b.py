@@ -4,7 +4,7 @@ import math
 # Verilen değerler
 W_0 = 62636856.0  # Referans potansiyel m²/s²
 gama_0 = 980.6199203 / 100  # Gal
-G_P = 9.816907178897 * pow(10, 5) / 100000  # Yer gravite (Gal)
+G_P = 9.816907178897 * pow(10, 5) / 100000  # Yer gravite (5. değer) Gal
 W_P = 6.262129752474 * pow(10, 7)  # Gravite potansiyel (8. değer) m²/s²
 enlem_derece = 38 + (45 / 60) + (0 / 3600)
 enlem_radyan = enlem_derece * (math.pi / 180)
