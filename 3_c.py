@@ -11,7 +11,6 @@ enlem_radyan = enlem_derece * (math.pi / 180)
 boylam_derece = 32 + (30 / 60) + (0 / 3600)
 boylam_radyan = boylam_derece * (math.pi / 180)
 h = 1625
-r = h
 
 # Sabit değerler
 a = 6378137
@@ -40,11 +39,11 @@ N = c / pow((1 + e_Ussu_Kare * pow(math.cos(enlem_radyan), 2)), 0.5)
 # print(N)
 
 # x hesabı
-x = (N + r) * math.cos(enlem_radyan) * math.cos(boylam_radyan)
+x = (N + h) * math.cos(enlem_radyan) * math.cos(boylam_radyan)
 # y hesabı
-y = (N + r) * math.cos(enlem_radyan) * math.sin(boylam_radyan)
+y = (N + h) * math.cos(enlem_radyan) * math.sin(boylam_radyan)
 # z hesabı
-z = ((1 - e_Kare) * N + r) * math.sin(enlem_radyan)
+z = ((1 - e_Kare) * N + h) * math.sin(enlem_radyan)
 # print(x)
 # print(y)
 # print(z)
