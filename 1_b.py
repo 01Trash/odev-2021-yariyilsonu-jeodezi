@@ -4,9 +4,9 @@ import math
 # Verilen değerler
 enlem_derece = 38 + (45 / 60) + (0 / 3600)
 enlem_radyan = enlem_derece * (math.pi / 180)
-boylam_derece = 39 + (30 / 60) + (0 / 3600)
+boylam_derece = 32 + (30 / 60) + (0 / 3600)
 boylam_radyan = boylam_derece * (math.pi / 180)
-h = 1025
+h = 1625
 
 # Sabit değerler
 a = 6378137
@@ -26,9 +26,9 @@ J_8 = -1.427 * pow(10, (-11))
 # Gama 0 değerinin hesabı
 gama_0 = gama_ekvator * ((1 + k * pow(math.sin(enlem_radyan), 2)) /
                          pow(1 - e_Kare * pow(math.sin(enlem_radyan), 2), 0.5))
-print(gama_0)
 
 # Gama h değerinin hesabı
+print("Ɣ0: %.8f m/s²" % gama_0)
 gama_h = gama_0 * (1 - (2 * h) / a * (1 + f + m - 2 * f *
                                       pow(math.sin(enlem_radyan), 2)) + (3 / pow(a, 2)) * pow(h, 2))
-print(gama_h)
+print("Ɣh: %.8f m/s²" % gama_h)
