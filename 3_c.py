@@ -2,16 +2,16 @@
 import math
 
 # Verilen değerler
-W_0 = 62636856.0  # Referans potansiyel m^2/s^2
-W_P = 6.262710435224 * pow(10, 7)  # Gravite potansiyel (16. değer) m^2/s^2
+W_P = 6.262129752474 * pow(10, 7)  # Gravite potansiyel (8. değer) m²/s²
+W_0 = 62636856.0  # Referans potansiyel m²/s²
 gama_0 = 980.6199203 / 100  # Gal
-G_P = 9.818649594884 * pow(10, 5) / 100000  # Yer gravite (Gal) (13. değer)
+G_P = 9.796232618985 * pow(10, 5) / 100000  # Yer gravite (Gal) (7. değer)
 enlem_derece = 38 + (45 / 60) + (0 / 3600)
 enlem_radyan = enlem_derece * (math.pi / 180)
-boylam_derece = 39 + (30 / 60) + (0 / 3600)
+boylam_derece = 32 + (30 / 60) + (0 / 3600)
 boylam_radyan = boylam_derece * (math.pi / 180)
-r = 1025
-h = r
+h = 1625
+r = h
 
 # Sabit değerler
 a = 6378137
@@ -116,7 +116,7 @@ U = (GM / r) * (1 - carpim) + (pow(w, 2) / 2) * \
 
 # Bozucu Potansiyel hesabı (T)
 T = W_P - U
-print("Bozucu Potansiyel (T): ", T)
+print("Bozucu Potansiyel: %.4f" % T)
 
 
 """#Yükseklik Anomalisi hesabı (zita)"""
@@ -141,7 +141,7 @@ gama_cizgi = gama_0 * (1 - (1 + f + m - 2 * f *
 N_1 = r - H_O
 # Yükseklik Anomalisi hesabı (zita)
 Zita = N_1 - ((g_cizgi - gama_cizgi) / gama_cizgi) * H_O
-print("Yükseklik Anomalisi (Zita): ", Zita)
+print("Yükseklik Anomalisi: %.4f" % Zita)
 
 
 """Gravite Bozukluğu hesabı (sigma_g)"""
@@ -157,11 +157,11 @@ gama_h = gama_0 * (1 - (2 * h) / a * (1 + f + m - 2 * f *
 
 # Gravite bozukluğu hesabı (sigma_g)
 sigma_g = (G_P - gama_h) * 1000
-print("Gravite bozukluğu (sigma_g): ", sigma_g)
+print("Gravite bozukluğu: %.4f" % sigma_g)
 
 
 """Gravite Anomalisi hesabı (Delta_g)"""
 g_0 = G_P + 0.3086 * H_O
 # Delta_g hesabı
 Delta_g = g_0 - gama_0
-print("Gravite Anomalisi (Delta_g): ", Delta_g)
+print("Gravite Anomalisi: %.4f" % Delta_g)
