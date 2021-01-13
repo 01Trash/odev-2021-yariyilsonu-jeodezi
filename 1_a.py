@@ -4,9 +4,9 @@ import math
 # Verilen değerler
 enlem_derece = 38 + (45 / 60) + (0 / 3600)
 enlem_radyan = enlem_derece * (math.pi / 180)
-boylam_derece = 39 + (30 / 60) + (0 / 3600)
+boylam_derece = 32 + (30 / 60) + (0 / 3600)
 boylam_radyan = boylam_derece * (math.pi / 180)
-h = 1025
+h = 1625
 
 # Sabit değerler
 a = 6378137
