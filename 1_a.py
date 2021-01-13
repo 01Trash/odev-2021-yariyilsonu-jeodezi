@@ -100,5 +100,4 @@ carpim = C_2 + C_4 + C_6
 # U değeri hesabı
 U = (GM / r) * (1 - carpim) + (pow(w, 2) / 2) * \
     pow(r, 2) * pow(math.sin(yeni_enlem), 2)
-
 print("U: %.4f m²/s²" % U)
