@@ -1,0 +1,36 @@
+        generated_by     ICGEM (hosted at GFZ-Potsdam)
+     generating_date     2021/01/12
+----------------------------------------------------------------------
+           modelname     EGM2008
+     max_used_degree          2190
+----------------------------------------------------------------------
+         tide_system     tide_free
+    zero_degree_term     included
+----------------------------------------------------------------------
+          refsysname     GRS80
+   max_degree_refpot             8
+            gmrefpot      3.98600500000E+14[m**3/s**2]
+        radiusrefpot     6378137.000 m
+          flatrefpot      3.352810681183638E-03   (1/298.25722210088)
+         omegarefpot      7.29211500000E-05 1/s
+----------------------------------------------------------------------
+    number_of_points             1
+      latlimit_north       38.750000000000    
+      latlimit_south       38.750000000000    
+      longlimit_west       32.500000000000    
+      longlimit_east       32.500000000000    
+----------------------------------------------------------------------
+description of columns -----------------------------------------------
+ 1 identifier (from input)
+ 2 longitude  (from input)    [degree]
+ 3 latitude   (from input)    [degree]
+ 4 h_over_ell (from input)     [meter]
+ -------------------------------------
+ 5 gravitation                  [mGal]  gravitation(h)                    
+ 6 gravitational_potential [m**2/s**2]  gravitational_potential(h)        
+ 7 gravity                      [mGal]  gravity(h)                        
+ 8 gravity_potential       [m**2/s**2]  gravity_potential(h)              
+----------------------------------------------------------------------
+
+end_of_head ================================================================
+1             32.50000000   38.75000000  1.625000E+03  9.816907178897E+05  6.255530621049E+07  9.796232618985E+05  6.262129752474E+07
