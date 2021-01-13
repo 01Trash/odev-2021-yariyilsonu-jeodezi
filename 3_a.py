@@ -10,8 +10,8 @@ W_0 = 62636856.0  # Referans potansiyel m^2/s^2
 
 # Jeopotansiyel sayı hesabı
 C_P = W_0 - W_P
-print(C_P)
+print("Jeopotansiyel sayı: %.4f" % C_P)
 
 # Jeopotansiyel yükseklik hesabı
 H = C_P / G
-print(H)
+print("Jeopotansiyel yükseklik: %.4f" % H)
