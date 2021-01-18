@@ -156,7 +156,7 @@ gama_h = gama_0 * (1 - (2 * h) / a * (1 + f + m - 2 * f *
 
 # Gravite bozukluğu hesabı (sigma_g)
 sigma_g = (G_P - gama_h) * 1000
-print("Gravite bozukluğu: %.4f" % sigma_g)
+print("Gravite Bozukluğu: %.4f" % sigma_g)
 
 
 """Gravite Anomalisi hesabı (Delta_g)"""
